@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="images/logo.svg">
   <link rel="stylesheet" href="css/output.css">
+  <script defer src="js/nav.js"></script>
   <title>Прибыл</title>
 </head>
 <body>
@@ -14,25 +15,25 @@
   </div>
   <header class="sticky top-2 scroll-smooth w-full z-50 flex flex-col justify-between mt-[30px] h-[172px] m-auto">
     <div class="flex justify-center">
-      <nav class="flex justify-center items-center w-[739px] h-[55px] bg-[#166A40] rounded-[60px]">
+      <nav class="navbar flex justify-center items-center w-[739px] h-[55px] bg-[#166A40] rounded-[60px]">
         <ul class="flex items-center space-x-[22px] text-base text-white">
-          <li><a class="active-link menu-link" href="/#home">Главная</a></li>
-          <li><a class="menu-link" href="/#customer">Для&nbspзаказчика</a></li>
-          <li><a class="menu-link" href="/#courier">Для&nbspкурьера</a></li>
-          <li><a class="menu-link" href="/#subscribe">Про&nbspподписку</a></li>
-          <li><a class="menu-link" href="#">Контакты</a></li>
+          <li data-section="home" class="active-link menu-link"><a href="#home">Главная</a></li>
+          <li data-section="customer" class="menu-link"><a href="#customer">Для&nbspзаказчика</a></li>
+          <li data-section="courier" class="menu-link"><a href="#courier">Для&nbspкурьера</a></li>
+          <li data-section="subscribe" class="menu-link"><a href="#subscribe">Про&nbspподписку</a></li>
+          <li class="menu-link"><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="max-w-[1600px] m-auto">
-    <section id="home" class="max-w-[1480px] h-[922.02px] mt-[90px] m-auto">
+    <section data-section="home" id="home" class="max-w-[1480px] h-[922.02px] mt-[90px] m-auto section">
       <img class="text-ladder w-[623.73px] h-[922.02px]" src="images/iphone-login-screen.svg" alt="айфон">
       <h2 class="pl-[490px] pt-[63.28px] uppercase">что <span class="uppercase">такое</span> <br> <span class="text-[96px] leading-[65.86px] uppercase">прибыл?</span></h2>
       <p class="tracking-[0.082em] w-[1390px] mt-[23px] text-[#1F1F1F]">Прибыл — это приложение, которое помогает найти и состыковать <br> нужных людей в нужное время. Сервис разработан с целью облегчить процесс <br> перевозки как небольших вещей, так и крупногабаритных. Данное приложение <br> создано в целях экономии денег и времени заказчика на перевозку, а также для <br> обеспечения выгодной поездки для перевозчиков. Ищете надежного перевозчика? <br> Наше приложение поможет вам найти идеального кандидата для вашей перевозки! <br> Мы предлагаем широкий выбор категорий, таких как локальная доставка внутри <br> вашего города, междугородние перевозки и международные отправки. <br> Независимо от того, что вы хотите отправить, мы поможем вам найти <br> подходящего перевозчика.</p>
     </section>
     </div>
-    <section id="customer" class="flex mt-[150px] w-[1216.44px] h-[842.64px] m-auto">
+    <section data-section="customer" id="customer" class="flex mt-[150px] w-[1216.44px] h-[842.64px] m-auto section">
       <div class="flex flex-col justify-center">
         <h2>Для <br> <span class="uppercase text-[96px] leading-[65.86px]">заказчика</span></h2>
         <p class="min-w-[717px] mt-[40px] text-[#1F1F1F]"> <span class="text-[26px] font-[700px] text-[#166A40] tracking-[0em]">Отправляйте выгодно, назначайте свою цену <br>
@@ -75,7 +76,7 @@
         <p class="mt-[25px] text-center text-base leading-[36.78px] text-white">Отправка в другую страну либо <br> из другой страны. Например, <br> отправить документы в <br> выбранную вами страну.</p>
       </section>
     </div>
-    <div id="courier" class="flex w-[1299.44px] h-[878.02px] m-auto mt-[150px]">
+    <div data-section="courier" id="courier" class="flex w-[1299.44px] h-[878.02px] m-auto mt-[150px] section">
       <img class="w-[414.44] h-[878.02px]" src="images/iphone-mission-screen.svg" alt="айфон">
       <div class="flex flex-col mt-[241.38px] ml-[85px]">
         <h2>Для <br> <span class="uppercase text-[96px] leading-[65.86px]">перевозчика</span></h2>
@@ -161,7 +162,7 @@
     </section>
     <div class="mt-[99.67px] h-[1804.37px] flex items-center mr-[60px]">
       <img class="absolute float-left" src="images/iphone-comments.svg" alt="айфон">
-      <div id="subscribe" class="float-right flex flex-col items-end w-full">
+      <div data-section="subscribe" id="subscribe" class="float-right flex flex-col items-end w-full section">
         <div class="pt-[22px] pr-[34px] w-[1124px] h-[408px] mb-[30px] shadow-main rounded-[30px]">
           <div class="text-ladder-comments w-[575px] h-[350px]"></div>
           <p class="text-[20px] leading-[32.98px] tracking-[0.07em] text-black">Наша Подписка в приложении - это идеальное решение для тех. <br>
