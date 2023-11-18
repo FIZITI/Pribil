@@ -17,7 +17,11 @@
   }
 
   .menu-link {
-    @apply flex items-center pl-[15px] pr-[24px] min-w-[105px] h-[40px] rounded-[60px] hover:bg-white hover:text-[#166A40];
+    @apply flex items-center min-w-[105px] h-[40px] rounded-[60px];
+  }
+  
+  .menu-hover {
+    @apply hover:w-full pr-[24px] pl-[15px] hover:h-full flex items-center rounded-[60px] hover:bg-white hover:text-[#166A40];
   }
 
   .active-link {
