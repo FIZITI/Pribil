@@ -9,30 +9,30 @@
   <title>Прибыл</title>
 </head>
 <body>
-  <header class="flex flex-col justify-between mt-[36px] w-[739px] h-[172px] m-auto">
-    <div class="flex flex-col items-center">
-      <img class="w-[66.11px] h-[87px]" src="images/logo.svg" alt="логотип">
-    </div>
+  <div class="flex flex-col items-center mt-[36px]">
+    <img class="w-[66.11px] h-[87px]" src="images/logo.svg" alt="логотип">
+  </div>
+  <header class="sticky top-2 scroll-smooth w-full z-50 flex flex-col justify-between mt-[30px] h-[172px] m-auto">
     <div class="flex justify-center">
       <nav class="flex justify-center items-center w-[739px] h-[55px] bg-[#166A40] rounded-[60px]">
         <ul class="flex items-center space-x-[22px] text-base text-white">
-          <li><a class="active-link menu-link" href="#">Главная</a></li>
-          <li><a class="menu-link" href="#">Для&nbspзаказчика</a></li>
-          <li><a class="menu-link" href="#">Для&nbspкурьера</a></li>
-          <li><a class="menu-link" href="#">Про&nbspподписку</a></li>
+          <li><a class="active-link menu-link" href="/#home">Главная</a></li>
+          <li><a class="menu-link" href="/#customer">Для&nbspзаказчика</a></li>
+          <li><a class="menu-link" href="/#courier">Для&nbspкурьера</a></li>
+          <li><a class="menu-link" href="/#subscribe">Про&nbspподписку</a></li>
           <li><a class="menu-link" href="#">Контакты</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="max-w-[1600px] m-auto">
-    <section class="max-w-[1480px] h-[922.02px] mt-[90px] m-auto">
-      <img class="tet w-[623.73px] h-[922.02px]" src="images/iphone-login-screen.svg" alt="айфон">
+    <section id="home" class="max-w-[1480px] h-[922.02px] mt-[90px] m-auto">
+      <img class="text-ladder w-[623.73px] h-[922.02px]" src="images/iphone-login-screen.svg" alt="айфон">
       <h2 class="pl-[490px] pt-[63.28px] uppercase">что <span class="uppercase">такое</span> <br> <span class="text-[96px] leading-[65.86px] uppercase">прибыл?</span></h2>
-      <p class="tracking-[0.085em] w-[1390px] mt-[23px] text-[#1F1F1F]">Прибыл — это приложение, которое помогает найти и состыковать <br> нужных людей в нужное время. Сервис разработан с целью облегчить процесс <br> перевозки как небольших вещей, так и крупногабаритных. Данное приложение <br> создано в целях экономии денег и времени заказчика на перевозку, а также для <br> обеспечения выгодной поездки для перевозчиков. Ищете надежного перевозчика? <br> Наше приложение поможет вам найти идеального кандидата для вашей перевозки! <br> Мы предлагаем широкий выбор категорий, таких как локальная доставка внутри <br> вашего города, междугородние перевозки и международные отправки. <br> Независимо от того, что вы хотите отправить, мы поможем вам найти <br> подходящего перевозчика.</p>
+      <p class="tracking-[0.082em] w-[1390px] mt-[23px] text-[#1F1F1F]">Прибыл — это приложение, которое помогает найти и состыковать <br> нужных людей в нужное время. Сервис разработан с целью облегчить процесс <br> перевозки как небольших вещей, так и крупногабаритных. Данное приложение <br> создано в целях экономии денег и времени заказчика на перевозку, а также для <br> обеспечения выгодной поездки для перевозчиков. Ищете надежного перевозчика? <br> Наше приложение поможет вам найти идеального кандидата для вашей перевозки! <br> Мы предлагаем широкий выбор категорий, таких как локальная доставка внутри <br> вашего города, междугородние перевозки и международные отправки. <br> Независимо от того, что вы хотите отправить, мы поможем вам найти <br> подходящего перевозчика.</p>
     </section>
     </div>
-    <section class="flex mt-[150px] w-[1216.44px] h-[842.64px] m-auto">
+    <section id="customer" class="flex mt-[150px] w-[1216.44px] h-[842.64px] m-auto">
       <div class="flex flex-col justify-center">
         <h2>Для <br> <span class="uppercase text-[96px] leading-[65.86px]">заказчика</span></h2>
         <p class="min-w-[717px] mt-[40px] text-[#1F1F1F]"> <span class="text-[26px] font-[700px] text-[#166A40] tracking-[0em]">Отправляйте выгодно, назначайте свою цену <br>
@@ -53,7 +53,7 @@
         </div>
         <p class="mt-[25px] text-center text-base leading-[36.78px] text-white">Под локальную подходит <br> курьерская доставка небольших <br> вещей, так и крупных. Например <br> помощь с переездом.</p>
       </section>
-      <section class="shadow-card w-[368px] h-[460px] bg-white  rounded-[60px]">
+      <section class="shadow-main w-[368px] h-[460px] bg-white  rounded-[60px]">
         <h3 class="flex flex-col text-center pt-[29px] font-[900] text-[32px] leading-[35.17px] text-[#166A40]">Межгород <br> <span class="text-[26px]">(попутный груз)<br>+ самолет</span></h3>
         <div class="mt-[25px] stickers-line flex justify-center">
           <img class="w-[44px] h-[44px]" src="images/automobile.svg" alt="машина">
@@ -75,7 +75,7 @@
         <p class="mt-[25px] text-center text-base leading-[36.78px] text-white">Отправка в другую страну либо <br> из другой страны. Например, <br> отправить документы в <br> выбранную вами страну.</p>
       </section>
     </div>
-    <div class="flex w-[1299.44px] h-[878.02px] m-auto mt-[150px]">
+    <div id="courier" class="flex w-[1299.44px] h-[878.02px] m-auto mt-[150px]">
       <img class="w-[414.44] h-[878.02px]" src="images/iphone-mission-screen.svg" alt="айфон">
       <div class="flex flex-col mt-[241.38px] ml-[85px]">
         <h2>Для <br> <span class="uppercase text-[96px] leading-[65.86px]">перевозчика</span></h2>
@@ -85,7 +85,7 @@
       </div>
     </div>
     <div class="flex justify-between m-auto mt-[150px] max-w-[1216px] h-[724px]">
-      <section class="shadow-card w-[369px] h-[680px] bg-white  rounded-[60px]">
+      <section class="shadow-main w-[369px] h-[680px] bg-white  rounded-[60px]">
         <h3 class="flex flex-col text-center pt-[29px] font-[900] text-[32px] leading-[35.17px] text-[#166A40]">Курьерская <br> доставка <span class="text-[26px] leading-[28.57px]">(крупная доставка <br> внутри города)</span></h3>
         <div class="mt-[20px] stickers-line flex justify-center">
           <img class="w-[44px] h-[44px]" src="images/man-running.svg" alt="человек">
@@ -121,7 +121,7 @@
           подходит для тех, кто едет на <br>
           газели или фуре.</p>
       </section>
-      <section class="shadow-card w-[369px] h-[680px] bg-white  rounded-[60px]">
+      <section class="shadow-main w-[369px] h-[680px] bg-white  rounded-[60px]">
         <h3 class="flex flex-col text-center pt-[29px] font-[900] text-[32px] leading-[35.17px] text-[#166A40]">Между- <br>народная</span></h3>
         <div class="mt-[25px] stickers-line flex justify-center">
           <img class="w-[44px] h-[44px]" src="images/sailboat.svg" alt="парусник">
@@ -143,6 +143,82 @@
           тонны.</p>
       </section>
     </div>
+    <section class="flex items-end mt-[250px] w-[1216px] h-[525.33px] m-auto">
+      <div class="absolute flex justify-center w-[403px] h-[525px] ml-[64px]">
+        <img class="w-[403px]" src="images/iphone-download.svg" alt="айфон">
+        <img class="absolute mt-[221px] w-[150.46px]" src="images/logo.svg" alt="логотип">
+      </div>
+      <div class="flex justify-end min-w-[1216px] shadow-main rounded-[60px] h-[392px] bg-white">
+        <div class="max-w-[610px] h-[255.5px] mt-[68px] mr-[69px]">
+          <h2 class="leading-[55px] h-[125px] tracking-[0.03em] text-[55px]">Скачайте&nbsp<span class="uppercase">прибыл</span> <br>
+            прямо сейчас!</h2>
+          <div class="flex w-full mt-[50px]">
+            <a class="w-[254.65px] h-[80.5px] mr-[40px]" href="#"><img class="w-[254.65px] h-[80.5px]" src="images/app-store.svg" alt="App Store"></a>
+            <a class="w-[254.65px] h-[80.5px]" href="#"><img class="w-[254.65px] h-[80.5px]" src="images/play-market.svg" alt="Google Play"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="mt-[99.67px] h-[1804.37px] flex items-center mr-[60px]">
+      <img class="absolute float-left" src="images/iphone-comments.svg" alt="айфон">
+      <div id="subscribe" class="float-right flex flex-col items-end w-full">
+        <div class="pt-[22px] pr-[34px] w-[1124px] h-[408px] mb-[30px] shadow-main rounded-[30px]">
+          <div class="text-ladder-comments w-[575px] h-[350px]"></div>
+          <p class="text-[20px] leading-[32.98px] tracking-[0.07em] text-black">Наша Подписка в приложении - это идеальное решение для тех. <br>
+            кто хочет зарабатывать на курьерских и крупных доставках. <br>
+                      С помощью подписки вы автоматически будете получать <br>
+                            новые заказы под выбранные вами фильтры. Вы <br>
+                              можете менять фильтры под ваши параметры. <br>
+                              Например, если вы часто передвигаетесь между <br>
+                            Москвой и Санкт-Петербургом на легковом&nbspавтомобиле, <br>
+                          вы можете выбрать город отправления Москва, а город <br>
+                        прибытия Санкт-Петербург, а также вес посылки, которую <br>
+                     можете взять с собой (кг/тонны). При выборе данного <br>
+                  фильтра новые заказы будут поступать вам.</p>
+        </div>
+        <div class="pt-[38px] w-[1124px] h-[408px] mb-[30px] bg-[#166A40] rounded-[30px]">
+          <div class="text-ladder-comments-two w-[575px] h-[350px]"></div>
+          <p class="text-[20px] leading-[32.98px] text-white">Обратите внимание, что подписка работает только при выборе <br>
+            критерия готов перевезти. Вся коммуникация между пользователями <br>
+                    осуществляется через сообщения внутри приложения, что <br>
+                  обеспечивает безопасность и удобство. Кроме того, прибыл обладает <br>
+              функцией оценки и отзывов, которая позволяет пользователям делиться <br>
+            своим опытом о выполненных заданиях, что помогает поддерживать <br>
+            качество услуг и улучшать репутацию пользователей. Приложение <br>
+            "Прибыл" предоставляет возможность скачать договор на перевозку грузов <br>
+            в целях дополнительной защиты и четкого определения прав и обязанностей <br>
+            между заказчиками и перевозчиками.</p>
+        </div>
+        <div class="pt-[26px] pr-[56px] w-[1206px] h-[350px] shadow-main rounded-[30px]">
+          <div class="text-ladder-comments-three w-[575px] h-[350px]"></div>
+          <p class="text-[20px] leading-[32.98px] tracking-[0.06em] text-black">Пользователи могут выбрать, хотят ли они использовать этот документ на свое <br>
+            усмотрении и согласие. Верифицированные пользователи: Для обеспечения <br>
+                    безопасности и надежности, "Прибыл" предлагает верификацию пользователей. <br>
+                  Это означает, что информация о пользователе проверена и подтверждена, что помогает <br>
+              создать доверительные отношения и предотвращает возможные проблемы. Рейтинговая <br>
+            система: Пользователи могут оценивать и оставлять отзывы о перевозчиках, основываясь на <br>
+            их прошлом опыте работы с ними. Рейтинговая система позволяет пользователям принимать <br>
+            более осознанные решения при выборе перевозчика и поддерживает высокое качество <br>
+            предоставляемых услуг.</p>
+        </div>
+      </div>
+    </div>
+    <header class="flex flex-col justify-between mt-[50px] mb-[63.96px] w-[739px] h-[172px] m-auto">
+      <div class="flex justify-center">
+        <nav class="flex justify-center items-center w-[739px] h-[55px] bg-[#166A40] rounded-[60px]">
+          <ul class="flex items-center space-x-[22px] text-base text-white">
+            <li><a class="active-link menu-link" href="/#home">Главная</a></li>
+            <li><a class="menu-link" href="/#customer">Для&nbspзаказчика</a></li>
+            <li><a class="menu-link" href="/#courier">Для&nbspкурьера</a></li>
+            <li><a class="menu-link" href="/#subscribe">Про&nbspподписку</a></li>
+            <li><a class="menu-link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="flex flex-col items-center">
+        <img class="w-[66.11px] h-[87px]" src="images/logo.svg" alt="логотип">
+      </div>
+    </header>
   </main>
 </body>
 </html>
