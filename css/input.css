@@ -9,7 +9,7 @@
   }
 
   h2 {
-    @apply font-black text-[#166A40] text-[64px] tracking-[0.09em];
+    @apply font-black text-[#166A40] text-[64px] tracking-[0.06em];
   }
 
   p {
@@ -52,7 +52,7 @@
     .text-ladder-comments {
       float: left;
       shape-outside: polygon(0 0, 20% 0, 85% 30%, 100% 80%, 100% 100%, 0 100%);
-      -webkit-shape-outside: polygon(0 0, 60% 0, 83% 30%, 88% 45%, 74% 100%, 100% 100%, 0 100%);
+      -webkit-shape-outside: polygon(0 0, 55% 0, 83% 30%, 88% 45%, 74% 100%, 100% 100%, 0 100%);
     }
 
     .text-ladder-comments-two {
