@@ -8,20 +8,28 @@
     @apply inline-block;
   }
 
+  br {
+    @apply lgl:hidden;
+  }
+
   h2 {
     @apply font-black text-[#166A40] text-[64px] tracking-[0.06em];
   }
 
   p {
-    @apply text-[18px] leading-[41.38px] text-[#1F1F1F] tracking-[0.09em];
+    @apply text-[18px] leading-[41.38px] text-[#1F1F1F] tracking-[0.09em] lmd:leading-[32.19px] sml:text-sm sml:leading-[32.19px] lmd:text-base;
+  }
+
+  .br-main {
+    @apply block;
   }
 
   .menu-link {
-    @apply flex items-center min-w-[105px] h-[40px] rounded-[60px];
+    @apply flex items-center min-w-[99px] h-[40px] rounded-[60px];
   }
   
   .menu-hover {
-    @apply hover:w-full pr-[24px] pl-[15px] hover:h-full flex items-center rounded-[60px] hover:bg-white hover:text-[#166A40];
+    @apply hover:w-full pr-[24px] pl-[16px] hover:h-full flex items-center rounded-[60px] hover:bg-white hover:text-[#166A40];
   }
 
   .active-link {
