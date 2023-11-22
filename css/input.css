@@ -81,6 +81,6 @@
   }
 
   .stickers-line > img {
-    @apply mr-[20px] last:mr-0;
+    @apply mr-[20px] last:mr-0 sml:mr-[16px];
   }
 }
