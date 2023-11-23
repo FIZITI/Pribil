@@ -4,7 +4,7 @@ const opacityBody2 = document.getElementById('opacity-block2');
 const menuBurger = document.querySelector('.menu-burger');
 iconMenu.addEventListener("click", function (e) {
     menuBurger.classList.toggle('_active');
-    document.body.classList.toggle('scroll-none');
+    iconMenu.classList.toggle('opacity-body');
     opacityBody.classList.toggle('opacity-body');
     opacityBody2.classList.toggle('opacity-body');
 });
@@ -12,7 +12,7 @@ iconMenu.addEventListener("click", function (e) {
 const iconClose = document.getElementById('burger-close');
 iconClose.addEventListener("click", function (e) {
     menuBurger.classList.toggle('_active');
-    document.body.classList.toggle('scroll-none');
+    iconMenu.classList.toggle('opacity-body');
     opacityBody.classList.toggle('opacity-body');
     opacityBody2.classList.toggle('opacity-body');
 });
