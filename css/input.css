@@ -83,4 +83,16 @@
   .stickers-line > img {
     @apply mr-[20px] last:mr-0 sml:mr-[16px];
   }
+
+  .menu-burger._active {
+    @apply block mmd:hidden;
+  }
+
+  .opacity-body {
+    @apply lmd:opacity-70 lmd:bg-[#00000080];
+  }
+
+  .scroll-none {
+    @apply overflow-y-hidden;
+  }
 }

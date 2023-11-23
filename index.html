@@ -7,11 +7,32 @@
   <link rel="shortcut icon" type="image/x-icon" href="images/logo.svg">
   <link rel="stylesheet" href="css/output.css">
   <script defer src="js/nav.js"></script>
+  <script defer src="js/menu-burger.js"></script>
   <title>Прибыл</title>
 </head>
 <body>
-  <div class="flex flex-col items-center mt-[36px] lmd:flex-row lmd:items-start lmd:mt-[25px] lmd:h-[62px]">
-    <button class="hidden w-[25.95px] h-[21px] lmd:flex lmd:flex-col lmd:justify-between lmd:mt-[14px] lmd:ml-[24px]">
+  <div class="hidden fixed min-w-[208px] w-[60%] z-50 min-h-[625px] h-[100vh] rounded-tr-[30px] top-0  bg-white menu-burger">
+    <div class="flex justify-end">
+      <button id="burger-close" class="flex w-[20px] h-[20px] mt-[21px] mr-[17px]">
+        <img class="w-2 m-auto" src="images/close.svg" alt="закрыть">
+      </button>
+    </div>
+    <div class="mt-[34px] ml-[34px]">
+      <img class="w-[47px] h-[62px]" src="images/logo.svg" alt="логотип">
+      <nav class="h-[388px] mt-[60px] mb-[52px]">
+        <ul class="flex flex-col justify-between h-full text-sm font-[700]">
+          <li data-section="home" class="menu-link"><a href="#home">Главная</a></li>
+          <li data-section="download" class="menu-link"><a href="#download">Скачать</a></li>
+          <li data-section="customer" class="menu-link"><a href="#customer">Для заказчика</a></li>
+          <li data-section="courier" class="menu-link"><a href="#courier">Для перевозчика</a></li>
+          <li data-section="subscribe" class="menu-link"><a href="#subscribe">Про подписку</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>      
+    </div>
+  </div>
+  <div id="opacity-block1" class="flex flex-col items-center pt-[36px] lmd:flex-row lmd:items-start lmd:pt-[25px] lmd:h-[62px]">
+    <button id="menu-burger-icon" class="hidden w-[25.95px] h-[21px] lmd:flex lmd:flex-col lmd:justify-between lmd:mt-[14px] lmd:ml-[24px]">
       <div class="w-full h-[5.53px] bg-[#166A40] rounded-[20px]"></div>
       <div class="w-full h-[5.53px] bg-[#166A40] rounded-[20px]"></div>
       <div class="w-full h-[5.53px] bg-[#166A40] rounded-[20px]"></div>
@@ -32,8 +53,8 @@
       </nav>
     </div>
   </header>
-  <main class="max-w-[1600px] m-auto">
-    <section data-section="home" id="home" class="max-w-[1480px] h-[922.02px] mt-[90px] m-auto section lgl:max-w-full lgl:m-auto lgl:h-auto lmd:mt-[67px]">
+  <main id="opacity-block2" class="max-w-[1600px] m-auto">
+    <section data-section="home" id="home" class="max-w-[1480px] h-[922.02px] pt-[90px] m-auto section lgl:max-w-full lgl:m-auto lgl:h-auto lmd:pt-[67px]">
       <img class="text-ladder w-[623.73px] h-[922.02px] lgl:hidden" src="images/iphone-login-screen.svg" alt="айфон">
       <h2 class="pl-[490px] pt-[63.28px] uppercase lgl:pl-0 lgl:pt-0 lgl:m-auto lgl:max-w-[600px] lgl:text-center lmd:text-[28px] lmd:max-w-[290px] sml:text-[24px]"><span>что </span><span class="uppercase">такое</span> <br> <span class="text-8xl leading-[65.86px] uppercase lmd:text-5xl sml:text-4xl lmd:leading-[37.04px]">прибыл?</span></h2>
       <img class="hidden m-auto mt-[35px] lgl:block lmd:w-[400px] sml:w-[180px]" src="images/iphone-login-screen.svg" alt="айфон">
@@ -100,7 +121,7 @@
           <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/automobile.svg" alt="машина">
           <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/delivery-truck.svg" alt="грузовик">
         </div>
-        <p class="mt-[42px] text-center text-base leading-[36.78px] text-[#1F1F1F] ldd:px-[23px] sml:pb-[32px] sml:mt-[20px]">Чтобы взять заказ на курьерскую <br>
+        <p class="mt-[42px] text-center text-base leading-[36.78px] text-[#1F1F1F] ldd:px-[23px] sml:pb-[32px] sml:mt-[20px] sml:text-sm sml:leading-[32.19px] sml:tracking-[0.04em]">Чтобы взять заказ на курьерскую <br>
           доставку или крупную доставку <br>
           внутри города, нажмите на <br> кнопку "Готов перевезти" и <br>
           выберите подходящие для вас <br>
@@ -115,7 +136,7 @@
           <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/locomotive.svg" alt="локомотив">
           <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/airplane.svg" alt="самолёт">
         </div>
-        <p class="mt-[25px] text-center text-base leading-[36.78px] text-white ldd:px-[30px] sml:pb-[30px] sml:mt-[20px]">Подходит для тех, кто часто <br>
+        <p class="mt-[25px] text-center text-base leading-[36.78px] text-white ldd:px-[30px] sml:pb-[30px] sml:mt-[20px] sml:text-sm sml:leading-[32.19px] sml:tracking-[0.04em]">Подходит для тех, кто часто <br>
           ездит или планирует поехать из <br>
           одного города в другой. <br>
           - необходимо выбрать город <br> отправления и город прибытия, <br>
@@ -136,7 +157,7 @@
           <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/bullet-train.svg" alt="поезд">
           <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/locomotive.svg" alt="локомотив">
         </div>
-        <p class="mt-[25px] text-center text-base leading-[36.78px] text-[#1F1F1F] ldd:px-[30px] sml:pb-[21px] sml:mt-[20px]">Чаще всего используется для <br>
+        <p class="mt-[25px] text-center text-base leading-[36.78px] text-[#1F1F1F] ldd:px-[30px] sml:pb-[21px] sml:mt-[20px] sml:text-sm sml:leading-[32.19px] sml:tracking-[0.04em]">Чаще всего используется для <br>
           передачи документов в другую <br>
           страну и из другой страны. А так <br>
           же для поиска перевозчиков <br>
@@ -171,7 +192,7 @@
       <div data-section="subscribe" id="subscribe" class="float-right flex flex-col items-end w-full lgl:items-center lgl:m-auto section">
         <div class="pt-[22px] pr-[34px] w-[1124px] h-[408px] mb-[30px] shadow-main rounded-[30px] lgl:w-[1206px] lgl:px-[25px] lgl:pt-[23px] lgl:h-auto lgl:min-h-[300px] lgl:mb-[40px] ldd:w-full ldd:p-[25px]">
           <div class="text-ladder-comments w-[575px] h-[350px] lgl:hidden"></div>
-          <p class="text-[20px] leading-[32.98px] tracking-[0.07em] text-black ssd:text-center ssd:tracking-[0.03em]">Наша Подписка в приложении - это идеальное решение для тех. <br>
+          <p class="text-[20px] leading-[32.98px] tracking-[0.07em] text-black ssd:text-center sml:text-sm sml:leading-[23.09px]">Наша Подписка в приложении - это идеальное решение для тех. <br>
             кто хочет зарабатывать на курьерских и крупных доставках. <br>
                       С помощью подписки вы автоматически будете получать <br>
                             новые заказы под выбранные вами фильтры. Вы <br>
@@ -185,7 +206,7 @@
         </div>
         <div class="pt-[38px] w-[1124px] h-[408px] mb-[30px] bg-[#166A40] rounded-[30px] lgl:w-[1206px] lgl:px-[25px] lgl:pt-[23px] lgl:h-auto lgl:min-h-[300px] lgl:mb-[40px] ldd:w-full ldd:p-[25px]">
           <div class="text-ladder-comments-two w-[575px] h-[350px] lgl:hidden"></div>
-          <p class="text-[20px] leading-[32.98px] text-white tracking-[0.075em] ssd:text-center ssd:tracking-[0.03em]">Обратите внимание, что подписка работает только при выборе <br>
+          <p class="text-[20px] leading-[32.98px] text-white tracking-[0.075em] ssd:text-center sml:text-sm sml:leading-[23.09px]">Обратите внимание, что подписка работает только при выборе <br>
             критерия готов перевезти. Вся коммуникация между пользователями <br>
                     осуществляется через сообщения внутри приложения, что <br>
                   обеспечивает безопасность и удобство. Кроме того, прибыл обладает <br>
@@ -198,7 +219,7 @@
         </div>
         <div class="pt-[26px] pr-[56px] w-[1206px] h-[350px] shadow-main rounded-[30px] lgl:px-[25px] lgl:pt-[23px] lgl:h-auto lgl:min-h-[300px] ldd:w-full ldd:p-[25px]">
           <div class="text-ladder-comments-three w-[575px] h-[350px] lgl:hidden"></div>
-          <p class="text-[20px] leading-[32.98px] tracking-[0.06em] text-black ssd:text-center ssd:tracking-[0.03em]">Пользователи могут выбрать, хотят ли они использовать этот документ на свое <br>
+          <p class="text-[20px] leading-[32.98px] tracking-[0.06em] text-black ssd:text-center sml:text-sm sml:leading-[23.09px]">Пользователи могут выбрать, хотят ли они использовать этот документ на свое <br>
             усмотрении и согласие. Верифицированные пользователи: Для обеспечения <br>
                     безопасности и надежности, "Прибыл" предлагает верификацию пользователей. <br>
                   Это означает, что информация о пользователе проверена и подтверждена, что помогает <br>
