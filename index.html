@@ -11,24 +11,26 @@
   <title>Прибыл</title>
 </head>
 <body>
-  <div class="hidden fixed min-w-[208px] w-[60%] z-50 min-h-[625px] h-[100vh] rounded-tr-[30px] top-0  bg-white menu-burger">
-    <div class="flex justify-end">
-      <button id="burger-close" class="flex w-[20px] h-[20px] mt-[21px] mr-[17px]">
-        <img class="w-2 m-auto" src="images/close.svg" alt="закрыть">
-      </button>
-    </div>
-    <div class="mt-[34px] ml-[34px]">
-      <img class="w-[47px] h-[62px]" src="images/logo.svg" alt="логотип">
-      <nav class="h-[388px] mt-[60px] mb-[52px]">
-        <ul class="flex flex-col justify-between h-full text-sm font-[700]">
-          <li data-section="home" class="menu-link"><a href="#home">Главная</a></li>
-          <li data-section="download" class="menu-link"><a href="#download">Скачать</a></li>
-          <li data-section="customer" class="menu-link"><a href="#customer">Для заказчика</a></li>
-          <li data-section="courier" class="menu-link"><a href="#courier">Для перевозчика</a></li>
-          <li data-section="subscribe" class="menu-link"><a href="#subscribe">Про подписку</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>      
+  <div id="body-bg" class="hidden fixed w-full z-50 h-auto menu-burger">
+    <div class="min-w-[208px] w-[60%] min-h-[625px] h-[100vh] rounded-tr-[30px] top-0 bg-white menu-burger-inside">
+      <div class="flex justify-end">
+        <button id="burger-close" class="flex w-[20px] h-[20px] mt-[21px] mr-[17px]">
+          <img class="w-2 m-auto" src="images/close.svg" alt="закрыть">
+        </button>
+      </div>
+      <div class="mt-[34px] ml-[34px]">
+        <img class="w-[47px] h-[62px]" src="images/logo.svg" alt="логотип">
+        <nav class="h-[388px] mt-[60px] mb-[52px]">
+          <ul class="flex flex-col justify-between h-full text-sm font-[700]">
+            <li data-section="home" class="menu-link"><a href="#home">Главная</a></li>
+            <li data-section="download" class="menu-link"><a href="#download">Скачать</a></li>
+            <li data-section="customer" class="menu-link"><a href="#customer">Для заказчика</a></li>
+            <li data-section="courier" class="menu-link"><a href="#courier">Для перевозчика</a></li>
+            <li data-section="subscribe" class="menu-link"><a href="#subscribe">Про подписку</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>      
+      </div>
     </div>
   </div>
   <div class="flex flex-col items-center pt-[36px] lmd:flex-row lmd:items-start lmd:pt-[25px] lmd:h-[86px]">
