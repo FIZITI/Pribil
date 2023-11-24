@@ -89,6 +89,6 @@
   }
 
   .opacity-body {
-    @apply lmd:opacity-70 lmd:bg-[#00000080];
+    @apply lmd:bg-[#00000080];
   }
 }
