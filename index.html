@@ -10,232 +10,42 @@
   <script defer src="js/menu-burger.js"></script>
   <title>Прибыл</title>
 </head>
-<body class="container">
-  <div class="hidden fixed min-w-[208px] w-[60%] z-50 min-h-[625px] h-[100vh] rounded-tr-[30px] top-0  bg-white menu-burger">
-    <div class="flex justify-end">
-      <button id="burger-close" class="flex w-[20px] h-[20px] mt-[21px] mr-[17px]">
-        <img class="w-2 m-auto" src="images/close.svg" alt="закрыть">
+<body>
+  <div class="container m-auto">
+    <div class="hidden fixed min-w-[208px] w-[60%] z-50 min-h-[625px] h-[100vh] rounded-tr-[30px] top-0  bg-white menu-burger">
+      <div class="flex justify-end">
+        <button id="burger-close" class="flex w-[20px] h-[20px] mt-[21px] mr-[17px]">
+          <img class="w-2 m-auto" src="images/close.svg" alt="закрыть">
+        </button>
+      </div>
+      <div class="mt-[34px] ml-[34px]">
+        <img class="w-[47px] h-[62px]" src="images/logo.svg" alt="логотип">
+        <nav class="h-[388px] mt-[60px] mb-[52px]">
+          <ul class="flex flex-col justify-between h-full text-sm font-[700]">
+            <li data-section="home" class="menu-link"><a href="#home">Главная</a></li>
+            <li data-section="download" class="menu-link"><a href="#download">Скачать</a></li>
+            <li data-section="customer" class="menu-link"><a href="#customer">Для заказчика</a></li>
+            <li data-section="courier" class="menu-link"><a href="#courier">Для перевозчика</a></li>
+            <li data-section="subscribe" class="menu-link"><a href="#subscribe">Про подписку</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>      
+      </div>
+    </div>
+    <div class="flex flex-col items-center pt-[36px] lmd:flex-row lmd:items-start lmd:pt-[25px] lmd:h-[86px]">
+      <button id="menu-burger-icon" class="hidden fixed w-[25.95px] h-[21px] lmd:flex lmd:flex-col lmd:justify-between lmd:mt-[14px] lmd:ml-[24px]">
+        <div class="w-full h-[5.53px] bg-[#166A40] rounded-[20px]"></div>
+        <div class="w-full h-[5.53px] bg-[#166A40] rounded-[20px]"></div>
+        <div class="w-full h-[5.53px] bg-[#166A40] rounded-[20px]"></div>
       </button>
+      <img class="w-[66.11px] h-[87px] lmd:absolute lmd:flex lmd:translate-x-[-50%] lmd:left-[50%] lmd:w-[47.12px] lmd:h-auto" src="images/logo.svg" alt="логотип">
     </div>
-    <div class="mt-[34px] ml-[34px]">
-      <img class="w-[47px] h-[62px]" src="images/logo.svg" alt="логотип">
-      <nav class="h-[388px] mt-[60px] mb-[52px]">
-        <ul class="flex flex-col justify-between h-full text-sm font-[700]">
-          <li data-section="home" class="menu-link"><a href="#home">Главная</a></li>
-          <li data-section="download" class="menu-link"><a href="#download">Скачать</a></li>
-          <li data-section="customer" class="menu-link"><a href="#customer">Для заказчика</a></li>
-          <li data-section="courier" class="menu-link"><a href="#courier">Для перевозчика</a></li>
-          <li data-section="subscribe" class="menu-link"><a href="#subscribe">Про подписку</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>      
-    </div>
-  </div>
-  <div class="flex flex-col items-center pt-[36px] lmd:flex-row lmd:items-start lmd:pt-[25px] lmd:h-[86px]">
-    <button id="menu-burger-icon" class="hidden fixed w-[25.95px] h-[21px] lmd:flex lmd:flex-col lmd:justify-between lmd:mt-[14px] lmd:ml-[24px]">
-      <div class="w-full h-[5.53px] bg-[#166A40] rounded-[20px]"></div>
-      <div class="w-full h-[5.53px] bg-[#166A40] rounded-[20px]"></div>
-      <div class="w-full h-[5.53px] bg-[#166A40] rounded-[20px]"></div>
-    </button>
-    <img class="w-[66.11px] h-[87px] lmd:absolute lmd:flex lmd:translate-x-[-50%] lmd:left-[50%] lmd:w-[47.12px] lmd:h-auto" src="images/logo.svg" alt="логотип">
-  </div>
-  <header class="sticky top-2 z-50 flex flex-col justify-between mt-[30px] h-[172px] m-auto lmd:hidden">
-    <div class="flex justify-center">
-      <nav class="navbar flex justify-center items-center w-[893px] h-[55px] bg-[#166A40] rounded-[60px]">
-        <ul class="flex items-center space-x-[29.5px] text-base text-white">
-          <li data-section="home" class="active-link menu-link"><a class="menu-hover" href="#home">Главная</a></li>
-          <li data-section="download" class="menu-link"><a class="menu-hover" href="#download">Скачать</a></li>
-          <li data-section="customer" class="menu-link"><a class="menu-hover" href="#customer">Для&nbspзаказчика</a></li>
-          <li data-section="courier" class="menu-link"><a class="menu-hover" href="#courier">Для&nbspкурьера</a></li>
-          <li data-section="subscribe" class="menu-link"><a class="menu-hover" href="#subscribe">Про&nbspподписку</a></li>
-          <li class="menu-link"><a class="menu-hover" href="#">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="max-w-[1600px] m-auto">
-    <section data-section="home" id="home" class="max-w-[1480px] h-[922.02px] pt-[90px] m-auto section lgl:max-w-full lgl:m-auto lgl:h-auto lmd:pt-[67px]">
-      <img class="text-ladder w-[623.73px] h-[922.02px] lgl:hidden" src="images/iphone-login-screen.svg" alt="айфон">
-      <h2 class="pl-[490px] pt-[63.28px] uppercase lgl:pl-0 lgl:pt-0 lgl:m-auto lgl:max-w-[600px] lgl:text-center lmd:text-[28px] lmd:max-w-[290px] sml:text-[24px]"><span>что </span><span class="uppercase">такое</span> <br> <span class="text-8xl leading-[65.86px] uppercase lmd:text-5xl sml:text-4xl lmd:leading-[37.04px]">прибыл?</span></h2>
-      <img class="hidden m-auto mt-[35px] lgl:block lmd:w-[400px] sml:w-[180px]" src="images/iphone-login-screen.svg" alt="айфон">
-      <p class="tracking-[0.14em] mt-[23px] text-[#1F1F1F] lgl:w-full lgl:max-w-[1000px] lgl:m-auto lgl:mt-[35px] lgl:text-center lgl:px-[40px] lmd:text-base lmd:leading-[32.19px] sml:text-sm sml:leading-[32.19px]">Прибыл — это приложение, которое помогает найти и состыковать <br> нужных людей в нужное время. Сервис разработан с целью облегчить процесс <br> перевозки как небольших вещей, так и крупногабаритных. Данное приложение <br> создано в целях экономии денег и времени заказчика на перевозку, а также для <br> обеспечения выгодной поездки для перевозчиков. Ищете надежного перевозчика? <br> Наше приложение поможет вам найти идеального кандидата для вашей перевозки! <br> Мы предлагаем широкий выбор категорий, таких как локальная доставка внутри <br> вашего города, междугородние перевозки и международные отправки. <br> Независимо от того, что вы хотите отправить, мы поможем вам найти <br> подходящего перевозчика.</p>
-    </section>
-    <section data-section="customer" id="customer" class="flex mt-[150px] w-[1216.44px] h-[842.64px] m-auto section ldd:flex-col-reverse ldd:h-auto ldd:items-center ldd:mt-[70px] ldd:w-full">
-      <div class="flex flex-col justify-center">
-        <h2 class="tracking-[0.045em] ldd:max-w-[700px] ldd:m-auto ldd:text-center ldd:mt-[34.28px] lmd:text-[28px] lmd:max-w-[400px] sml:leading-[24.7px] sml:text-[24px] sml:max-w-[249px]">Для <br> <span class="uppercase text-[96px] leading-[65.86px] lmd:text-[48px] sml:leading-[37.04px] sml:text-[36px]">заказчика</span></h2>
-        <p class="min-w-[717px] mt-[40px] text-[#1F1F1F] tracking-[0.15em] ldd:min-w-0 ldd:max-w-[1000px] ldd:text-center ldd:px-[40px]"> <span class="text-[26px] font-[700] text-[#166A40] tracking-[0.04em] ldd:text-[28px] ldd:leading-[25px] sml:text-[20px] ldd:text-center sml:tracking-[0em]">Отправляйте выгодно, назначайте свою цену <br class="br-main">
-          <span class="leading-[46.77px] text-[26px] ldd:text-[28px] ldd:leading-[25px] ldd:text-center sml:text-[20px] sml:tracking-[0em]">Экономьте время и деньги</span></span> <br class="br-main">
-          Наше приложение предлагает простой и удобный интерфейс <br> для выбора подходящей категории доставки. Вы можете выбрать <br> оптимальный вариант для вас и быстро найти перевозчика, <br> который подходит под ваши требования. Для этого достаточно <br> выбрать вид перевозки и нужную дату. Заказ актуален до <br> наступления выбранной вами даты. Вы так же можете поменять <br> роль на перевозчика.</p>
-      </div>
-      <img class="ml-[85px] w-[414.44] min-h-[842.64px] ldd:h-auto ldd:min-h-0 ldd:max-w-[414.44px] ldd:ml-0 lmd:w-[280px] sml:w-[183px]" src="images/iphone-search-screen.svg" alt="айфон">
-    </section>
-    <div class="flex justify-between m-auto mt-[150px] max-w-[1216px] h-[460px] ldd:flex-col ldd:h-auto ldd:max-w-[369px] ldd:mt-[50px] sml:w-[250px]">
-      <section class="w-[369px] h-[370px] bg-[#166A40] rounded-[60px] sml:rounded-[30px] sml:w-[250px] sml:h-[370px]">
-        <h3 class="flex justify-center text-center pt-[29px] font-[900] text-[32px] leading-[35.17px] text-white sml:text-[20px] sml:leading-[21.98px] sml:text-center sml:w-[116px] sml:m-auto sml:pt-[25px]">Локальная <br>
-          доставка</h3>
-        <div class="mt-[25px] stickers-line flex justify-center sml:mt-[20px]">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/man-running.svg" alt="человек">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/bicycle.svg" alt="велосипед">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/automobile.svg" alt="машина">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/delivery-truck.svg" alt="грузовик">
-        </div>
-        <p class="mt-[25px] text-center text-base leading-[36.78px] text-white lgl:px-[24px] sml:text-sm sml:px-[26px] sml:leading-[32.19px] sml:tracking-[0.03em] sml:mt-[20px]">Под локальную подходит <br> курьерская доставка небольших <br> вещей, так и крупных. Например <br> помощь с переездом.</p>
-      </section>
-      <section class="shadow-main w-[368px] h-[460px] bg-white  rounded-[60px] ldd:mt-[40px] sml:rounded-[30px] sml:w-[250px] sml:h-[370px]">
-        <h3 class="flex flex-col text-center pt-[29px] font-[900] text-[32px] leading-[35.17px] text-[#166A40] sml:text-[20px] sml:leading-[21.98px] sml:text-center sml:w-[200px] sml:block sml:m-auto sml:pt-[23px]">Межгород <br> <span class="text-[26px] sml:text-[20px] sml:leading-[21.98px] sml:text-center sml:w-[116px] sml:m-auto">(попутный груз)<br class="br-main">+ самолет</span></h3>
-        <div class="mt-[25px] stickers-line flex justify-center sml:mt-[20px]">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/automobile.svg" alt="машина">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/delivery-truck.svg" alt="грузовик">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/locomotive.svg" alt="локомотив">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/airplane.svg" alt="самолёт">
-        </div>
-        <p class="mt-[25px] text-center text-base leading-[36.78px] text-[#1F1F1F] lgl:px-[24px] sml:text-sm sml:px-[26px] sml:leading-[32.19px] sml:tracking-[0.03em] sml:mt-[20px]">Под локальную подходит <br> курьерская доставка небольших <br> вещей, так и крупных, например <br> помощь с переездом <br> (посмотреть как в приложении).</p>
-      </section>
-      <section class="w-[369px] h-[370px] bg-[#166A40] rounded-[60px] ldd:mt-[40px] sml:rounded-[30px] sml:w-[250px] sml:h-[370px]">
-        <h3 class="flex justify-center text-center pt-[29px] font-[900] text-[32px] leading-[35.17px] text-white sml:text-[20px] sml:leading-[21.98px] sml:text-center sml:w-[116px] sml:m-auto sml:pt-[17px]">Между- <br>
-        народная</h3>
-        <div class="mt-[25px] stickers-line flex justify-center sml:mt-[20px]">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/sailboat.svg" alt="парусник">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/airplane.svg" alt="самолёт">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/bullet-train.svg" alt="поезд">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/locomotive.svg" alt="локомотив">
-        </div>
-        <p class="mt-[25px] text-center text-base leading-[36.78px] text-white lgl:px-[24px] sml:text-sm sml:px-[26px] sml:leading-[32.19px] sml:tracking-[0.03em] sml:mt-[20px]">Отправка в другую страну либо <br> из другой страны. Например, <br> отправить документы в <br> выбранную вами страну.</p>
-      </section>
-    </div>
-    <div data-section="courier" id="courier" class="flex w-[1299.44px] h-[878.02px] m-auto mt-[150px] section lgl:h-auto lgl:w-auto lgl:flex-col lgl:mt-[70px]">
-      <img class="w-[414.44] h-[878.02px] lmd:w-[280px] lmd:h-auto lmd:m-auto sml:w-[183px]" src="images/iphone-mission-screen.svg" alt="айфон">
-      <div class="flex flex-col mt-[241.38px] ml-[85px] lgl:w-auto lgl:ml-0 lgl:justify-center lgl:mt-[34px]">
-        <h2 class="lgl:max-w-[1000px] lgl:text-center lgl:m-auto lmd:text-[28px] lmd:max-w-[460px] sml:text-[24px] sml:leading-[24.7px] sml:w-[300px]">Для <br> <span class="uppercase text-[96px] leading-[65.86px] lmd:text-[48px] sml:text-[32px] sml:leading-[32.93px]">перевозчика</span></h2>
-        <p class="min-w-[717px] mt-[40px] text-[#1F1F1F] tracking-[0.18em] lgl:max-w-[1000px] lgl:m-auto lgl:text-center lmd:px-[40px] lmd:mt-[35.3px] lmd:min-w-0"> <span class="text-[26px] font-[700] text-[#166A40] tracking-[0.09em] ldd:text-[28px] sml:text-[20px] sml:leading-[25px] sml:max-w-[248px]">Сделай свою поездку выгодной</span> <br class="br-main">
-          Для того чтобы взять заказ на перевозку грузов с помощью <br> нашего приложения необходимо всего лишь нажать на кнопку <br> «готов перевезти» и выбрать подходящие для вас фильтры. Это <br> очень просто и удобно, благодаря интуитивно понятному <br>
-            интерфейсу приложения. Вы так же можете поменять роль на <br> заказчика.</p>
-      </div>
-    </div>
-    <div class="flex justify-between m-auto mt-[150px] max-w-[1216px] h-[724px] ldd:h-auto ldd:flex-col ldd:items-center ldd:mt-[50px]">
-      <section class="shadow-main w-[369px] h-[680px] bg-white  rounded-[60px] sml:w-[250px] sml:rounded-[30px] sml:h-auto">
-        <h3 class="flex flex-col text-center pt-[29px] font-[900] text-[32px] leading-[35.17px] text-[#166A40] sml:text-[20px] sml:leading-[27.68px] sml:max-w-[220px] sml:m-auto sml:pt-[33px]">Курьерская <br> доставка <span class="text-[26px] leading-[28.57px] sml:text-[20px]">(крупная доставка <br> внутри города)</span></h3>
-        <div class="mt-[20px] stickers-line flex justify-center">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/man-running.svg" alt="человек">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/bicycle.svg" alt="велосипед">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/automobile.svg" alt="машина">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/delivery-truck.svg" alt="грузовик">
-        </div>
-        <p class="mt-[42px] text-center text-base leading-[36.78px] text-[#1F1F1F] ldd:px-[23px] sml:pb-[32px] sml:mt-[20px] sml:text-sm sml:leading-[32.19px] sml:tracking-[0.04em]">Чтобы взять заказ на курьерскую <br>
-          доставку или крупную доставку <br>
-          внутри города, нажмите на <br> кнопку "Готов перевезти" и <br>
-          выберите подходящие для вас <br>
-          фильтры. Как только вы <br> выберете подходящий для вас <br> заказ, вам останется лишь <br> откликнуться на него, чтобы <br> заказчик увидел вас.</p>
-      </section>
-      <section class="w-[368px] h-[724px] bg-[#166A40] rounded-[60px] ldd:mt-[40px] sml:w-[250px] sml:rounded-[30px] sml:h-auto">
-        <h3 class="flex flex-col justify-center text-center pt-[29px] font-[900] text-[32px] leading-[35.17px] text-white sml:text-[20px] sml:leading-[27.68px]">Междугородняя <br>
-          <span class="text-[26px] sml:text-[20px]">(попутный груз)</span></h3>
-        <div class="mt-[21px] stickers-line flex justify-center sml:mt-[20px]">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/automobile.svg" alt="машина">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/delivery-truck.svg" alt="грузовик">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/locomotive.svg" alt="локомотив">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/airplane.svg" alt="самолёт">
-        </div>
-        <p class="mt-[25px] text-center text-base leading-[36.78px] text-white ldd:px-[30px] sml:pb-[30px] sml:mt-[20px] sml:text-sm sml:leading-[32.19px] sml:tracking-[0.04em]">Подходит для тех, кто часто <br>
-          ездит или планирует поехать из <br>
-          одного города в другой. <br>
-          - необходимо выбрать город <br> отправления и город прибытия, <br>
-          а также размер посылки <br>
-          которую вы можете взять с <br>
-          собой по пути. При выборе в кг, <br>
-          это подходит для тех, кто едет <br>
-          на мотоцикле, машине, поезде и <br>
-          самолете. При выборе в тоннах <br>
-          подходит для тех, кто едет на <br>
-          газели или фуре.</p>
-      </section>
-      <section class="shadow-main w-[369px] h-[680px] bg-white  rounded-[60px] ldd:mt-[40px] sml:w-[250px] sml:rounded-[30px] sml:h-auto">
-        <h3 class="flex flex-col text-center pt-[29px] font-[900] text-[32px] leading-[35.17px] text-[#166A40] sml:text-[20px] sml:leading-[21.98px] sml:w-[106px] sml:m-auto">Между- <br>народная</span></h3>
-        <div class="mt-[25px] stickers-line flex justify-center sml:mt-[20px]">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/sailboat.svg" alt="парусник">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/airplane.svg" alt="самолёт">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/bullet-train.svg" alt="поезд">
-          <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/locomotive.svg" alt="локомотив">
-        </div>
-        <p class="mt-[25px] text-center text-base leading-[36.78px] text-[#1F1F1F] ldd:px-[30px] sml:pb-[21px] sml:mt-[20px] sml:text-sm sml:leading-[32.19px] sml:tracking-[0.04em]">Чаще всего используется для <br>
-          передачи документов в другую <br>
-          страну и из другой страны. А так <br>
-          же для поиска перевозчиков <br>
-          движущихся из другой страны <br> или в другую страну. Подходит: <br>
-          машина, самолет, газель, фура. <br>
-          - необходимо выбрать страну и <br>
-          город отправления, затем страну <br>
-          и город прибытия. После чего <br>
-          задать параметры, допустимые <br>
-          для вашей перевозки в КГ/ <br>
-          тонны.</p>
-      </section>
-    </div>
-    <section data-section="download" id="download" class="flex items-end mt-[250px] w-[1216px] h-[525.33px] m-auto ldd:min-w-0 ldd:justify-center ldd:w-auto ldd:h-auto ldd:mt-[75px] section">
-      <div class="absolute flex justify-center w-[403px] h-[525px] ml-[64px] ldd:hidden">
-        <img class="w-[403px]" src="images/iphone-download.svg" alt="айфон">
-        <img class="absolute mt-[221px] w-[150.46px]" src="images/logo.svg" alt="логотип">
-      </div>
-      <div class="flex justify-end min-w-[1216px] shadow-main rounded-[60px] h-[392px] ldd:justify-center ldd:shadow-none ldd:min-w-0 ldd:h-auto">
-        <div class="max-w-[610px] h-[255.5px] mt-[68px] mr-[69px] ldd:mr-0 ldd:h-auto ldd:mt-0">
-          <h2 class="leading-[55px] h-[125px] tracking-[0.027em] text-[55px] lmd:leading-[32.93px] lmd:w-[300px] ldd:text-center ldd:h-auto ldd:m-auto lmd:text-[28px] sml:text-[24px] sml:leading-[32.93px] sml:w-[220px]">Скачайте <span class="uppercase lmd:text-[48px] sml:text-[32px]">прибыл</span> <br>
-            прямо сейчас!</h2>
-          <div class="flex w-full mt-[50px] ssd:flex-col ssd:items-center ssd:mt-[40px]">
-            <a class="w-[254.65px] h-[80.5px] mr-[40px] ssd:mr-0" href="#"><img class="w-[254.65px] h-[80.5px]" src="images/app-store.svg" alt="App Store"></a>
-            <a class="w-[254.65px] h-[80.5px] ssd:mt-[40px]" href="#"><img class="w-[254.65px] h-[80.5px]" src="images/play-market.svg" alt="Google Play"></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="mt-[99.67px] h-[1804.37px] flex items-center lgl:m-auto mr-[60px] lgl:h-auto lgl:mt-[80px] ldd:px-[35px]">
-      <img class="absolute float-left lgl:hidden" src="images/iphone-comments.svg" alt="айфон">
-      <div data-section="subscribe" id="subscribe" class="float-right flex flex-col items-end w-full lgl:items-center lgl:m-auto section">
-        <div class="pt-[22px] pr-[34px] w-[1124px] h-[408px] mb-[30px] shadow-main rounded-[30px] lgl:w-[1206px] lgl:px-[25px] lgl:pt-[23px] lgl:h-auto lgl:min-h-[300px] lgl:mb-[40px] ldd:w-full ldd:p-[25px]">
-          <div class="text-ladder-comments w-[575px] h-[350px] lgl:hidden"></div>
-          <p class="text-[20px] leading-[32.98px] tracking-[0.07em] text-black ssd:text-center sml:text-sm sml:leading-[23.09px]">Наша Подписка в приложении - это идеальное решение для тех. <br>
-            кто хочет зарабатывать на курьерских и крупных доставках. <br>
-                      С помощью подписки вы автоматически будете получать <br>
-                            новые заказы под выбранные вами фильтры. Вы <br>
-                              можете менять фильтры под ваши параметры. <br>
-                              Например, если вы часто передвигаетесь между <br>
-                            Москвой и Санкт-Петербургом на легковом&nbspавтомобиле, <br>
-                          вы можете выбрать город отправления Москва, а город <br>
-                        прибытия Санкт-Петербург, а также вес посылки, которую <br>
-                     можете взять с собой (кг/тонны). При выборе данного <br>
-                  фильтра новые заказы будут поступать вам.</p>
-        </div>
-        <div class="pt-[38px] w-[1124px] h-[408px] mb-[30px] bg-[#166A40] rounded-[30px] lgl:w-[1206px] lgl:px-[25px] lgl:pt-[23px] lgl:h-auto lgl:min-h-[300px] lgl:mb-[40px] ldd:w-full ldd:p-[25px]">
-          <div class="text-ladder-comments-two w-[575px] h-[350px] lgl:hidden"></div>
-          <p class="text-[20px] leading-[32.98px] text-white tracking-[0.075em] ssd:text-center sml:text-sm sml:leading-[23.09px]">Обратите внимание, что подписка работает только при выборе <br>
-            критерия готов перевезти. Вся коммуникация между пользователями <br>
-                    осуществляется через сообщения внутри приложения, что <br>
-                  обеспечивает безопасность и удобство. Кроме того, прибыл обладает <br>
-              функцией оценки и отзывов, которая позволяет пользователям делиться <br>
-            своим опытом о выполненных заданиях, что помогает поддерживать <br>
-            качество услуг и улучшать репутацию пользователей. Приложение <br>
-            "Прибыл" предоставляет возможность скачать договор на перевозку грузов <br>
-            в целях дополнительной защиты и четкого определения прав и обязанностей <br>
-            между заказчиками и перевозчиками.</p>
-        </div>
-        <div class="pt-[26px] pr-[56px] w-[1206px] h-[350px] shadow-main rounded-[30px] lgl:px-[25px] lgl:pt-[23px] lgl:h-auto lgl:min-h-[300px] ldd:w-full ldd:p-[25px]">
-          <div class="text-ladder-comments-three w-[575px] h-[350px] lgl:hidden"></div>
-          <p class="text-[20px] leading-[32.98px] tracking-[0.06em] text-black ssd:text-center sml:text-sm sml:leading-[23.09px]">Пользователи могут выбрать, хотят ли они использовать этот документ на свое <br>
-            усмотрении и согласие. Верифицированные пользователи: Для обеспечения <br>
-                    безопасности и надежности, "Прибыл" предлагает верификацию пользователей. <br>
-                  Это означает, что информация о пользователе проверена и подтверждена, что помогает <br>
-              создать доверительные отношения и предотвращает возможные проблемы. Рейтинговая <br>
-            система: Пользователи могут оценивать и оставлять отзывы о перевозчиках, основываясь на <br>
-            их прошлом опыте работы с ними. Рейтинговая система позволяет пользователям принимать <br>
-            более осознанные решения при выборе перевозчика и поддерживает высокое качество <br>
-            предоставляемых услуг.</p>
-        </div>
-      </div>
-    </div>
-    <header class="w-full z-50 flex flex-col mt-[36px] h-auto m-auto lmd:hidden">
+    <header class="sticky top-2 z-50 flex flex-col justify-between mt-[30px] h-[172px] m-auto lmd:hidden">
       <div class="flex justify-center">
-        <nav class="navbar flex justify-center items-center w-[739px] h-[55px] bg-[#166A40] rounded-[60px]">
-          <ul class="flex items-center space-x-[22px] text-base text-white">
+        <nav class="navbar flex justify-center items-center w-[893px] h-[55px] bg-[#166A40] rounded-[60px]">
+          <ul class="flex items-center space-x-[29.5px] text-base text-white">
             <li data-section="home" class="active-link menu-link"><a class="menu-hover" href="#home">Главная</a></li>
+            <li data-section="download" class="menu-link"><a class="menu-hover" href="#download">Скачать</a></li>
             <li data-section="customer" class="menu-link"><a class="menu-hover" href="#customer">Для&nbspзаказчика</a></li>
             <li data-section="courier" class="menu-link"><a class="menu-hover" href="#courier">Для&nbspкурьера</a></li>
             <li data-section="subscribe" class="menu-link"><a class="menu-hover" href="#subscribe">Про&nbspподписку</a></li>
@@ -244,9 +54,201 @@
         </nav>
       </div>
     </header>
-    <div class="flex flex-col items-center mt-[30px] pb-[63.96px] lmd:mt-[50px] lmd:pb-[37px]">
-      <img class="w-[66.11px] h-[87px] lmd:w-[70px] lmd:h-[92px]" src="images/logo.svg" alt="логотип">
-    </div>
-  </main>
+    <main class="max-w-[1600px] m-auto">
+      <section data-section="home" id="home" class="max-w-[1480px] h-[922.02px] pt-[90px] m-auto section lgl:max-w-full lgl:m-auto lgl:h-auto lmd:pt-[67px]">
+        <img class="text-ladder w-[623.73px] h-[922.02px] lgl:hidden" src="images/iphone-login-screen.svg" alt="айфон">
+        <h2 class="pl-[490px] pt-[63.28px] uppercase lgl:pl-0 lgl:pt-0 lgl:m-auto lgl:max-w-[600px] lgl:text-center lmd:text-[28px] lmd:max-w-[290px] sml:text-[24px]"><span>что </span><span class="uppercase">такое</span> <br> <span class="text-8xl leading-[65.86px] uppercase lmd:text-5xl sml:text-4xl lmd:leading-[37.04px]">прибыл?</span></h2>
+        <img class="hidden m-auto mt-[35px] lgl:block lmd:w-[400px] sml:w-[180px]" src="images/iphone-login-screen.svg" alt="айфон">
+        <p class="tracking-[0.14em] mt-[23px] text-[#1F1F1F] lgl:w-full lgl:max-w-[1000px] lgl:m-auto lgl:mt-[35px] lgl:text-center lgl:px-[40px] lmd:text-base lmd:leading-[32.19px] sml:text-sm sml:leading-[32.19px]">Прибыл — это приложение, которое помогает найти и состыковать <br> нужных людей в нужное время. Сервис разработан с целью облегчить процесс <br> перевозки как небольших вещей, так и крупногабаритных. Данное приложение <br> создано в целях экономии денег и времени заказчика на перевозку, а также для <br> обеспечения выгодной поездки для перевозчиков. Ищете надежного перевозчика? <br> Наше приложение поможет вам найти идеального кандидата для вашей перевозки! <br> Мы предлагаем широкий выбор категорий, таких как локальная доставка внутри <br> вашего города, междугородние перевозки и международные отправки. <br> Независимо от того, что вы хотите отправить, мы поможем вам найти <br> подходящего перевозчика.</p>
+      </section>
+      <section data-section="customer" id="customer" class="flex mt-[150px] w-[1216.44px] h-[842.64px] m-auto section ldd:flex-col-reverse ldd:h-auto ldd:items-center ldd:mt-[70px] ldd:w-full">
+        <div class="flex flex-col justify-center">
+          <h2 class="tracking-[0.045em] ldd:max-w-[700px] ldd:m-auto ldd:text-center ldd:mt-[34.28px] lmd:text-[28px] lmd:max-w-[400px] sml:leading-[24.7px] sml:text-[24px] sml:max-w-[249px]">Для <br> <span class="uppercase text-[96px] leading-[65.86px] lmd:text-[48px] sml:leading-[37.04px] sml:text-[36px]">заказчика</span></h2>
+          <p class="min-w-[717px] mt-[40px] text-[#1F1F1F] tracking-[0.15em] ldd:min-w-0 ldd:max-w-[1000px] ldd:text-center ldd:px-[40px]"> <span class="text-[26px] font-[700] text-[#166A40] tracking-[0.04em] ldd:text-[28px] ldd:leading-[25px] sml:text-[20px] ldd:text-center sml:tracking-[0em]">Отправляйте выгодно, назначайте свою цену <br class="br-main">
+            <span class="leading-[46.77px] text-[26px] ldd:text-[28px] ldd:leading-[25px] ldd:text-center sml:text-[20px] sml:tracking-[0em]">Экономьте время и деньги</span></span> <br class="br-main">
+            Наше приложение предлагает простой и удобный интерфейс <br> для выбора подходящей категории доставки. Вы можете выбрать <br> оптимальный вариант для вас и быстро найти перевозчика, <br> который подходит под ваши требования. Для этого достаточно <br> выбрать вид перевозки и нужную дату. Заказ актуален до <br> наступления выбранной вами даты. Вы так же можете поменять <br> роль на перевозчика.</p>
+        </div>
+        <img class="ml-[85px] w-[414.44] min-h-[842.64px] ldd:h-auto ldd:min-h-0 ldd:max-w-[414.44px] ldd:ml-0 lmd:w-[280px] sml:w-[183px]" src="images/iphone-search-screen.svg" alt="айфон">
+      </section>
+      <div class="flex justify-between m-auto mt-[150px] max-w-[1216px] h-[460px] ldd:flex-col ldd:h-auto ldd:max-w-[369px] ldd:mt-[50px] sml:w-[250px]">
+        <section class="w-[369px] h-[370px] bg-[#166A40] rounded-[60px] sml:rounded-[30px] sml:w-[250px] sml:h-[370px]">
+          <h3 class="flex justify-center text-center pt-[29px] font-[900] text-[32px] leading-[35.17px] text-white sml:text-[20px] sml:leading-[21.98px] sml:text-center sml:w-[116px] sml:m-auto sml:pt-[25px]">Локальная <br>
+            доставка</h3>
+          <div class="mt-[25px] stickers-line flex justify-center sml:mt-[20px]">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/man-running.svg" alt="человек">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/bicycle.svg" alt="велосипед">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/automobile.svg" alt="машина">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/delivery-truck.svg" alt="грузовик">
+          </div>
+          <p class="mt-[25px] text-center text-base leading-[36.78px] text-white lgl:px-[24px] sml:text-sm sml:px-[26px] sml:leading-[32.19px] sml:tracking-[0.03em] sml:mt-[20px]">Под локальную подходит <br> курьерская доставка небольших <br> вещей, так и крупных. Например <br> помощь с переездом.</p>
+        </section>
+        <section class="shadow-main w-[368px] h-[460px] bg-white  rounded-[60px] ldd:mt-[40px] sml:rounded-[30px] sml:w-[250px] sml:h-[370px]">
+          <h3 class="flex flex-col text-center pt-[29px] font-[900] text-[32px] leading-[35.17px] text-[#166A40] sml:text-[20px] sml:leading-[21.98px] sml:text-center sml:w-[200px] sml:block sml:m-auto sml:pt-[23px]">Межгород <br> <span class="text-[26px] sml:text-[20px] sml:leading-[21.98px] sml:text-center sml:w-[116px] sml:m-auto">(попутный груз)<br class="br-main">+ самолет</span></h3>
+          <div class="mt-[25px] stickers-line flex justify-center sml:mt-[20px]">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/automobile.svg" alt="машина">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/delivery-truck.svg" alt="грузовик">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/locomotive.svg" alt="локомотив">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/airplane.svg" alt="самолёт">
+          </div>
+          <p class="mt-[25px] text-center text-base leading-[36.78px] text-[#1F1F1F] lgl:px-[24px] sml:text-sm sml:px-[26px] sml:leading-[32.19px] sml:tracking-[0.03em] sml:mt-[20px]">Под локальную подходит <br> курьерская доставка небольших <br> вещей, так и крупных, например <br> помощь с переездом <br> (посмотреть как в приложении).</p>
+        </section>
+        <section class="w-[369px] h-[370px] bg-[#166A40] rounded-[60px] ldd:mt-[40px] sml:rounded-[30px] sml:w-[250px] sml:h-[370px]">
+          <h3 class="flex justify-center text-center pt-[29px] font-[900] text-[32px] leading-[35.17px] text-white sml:text-[20px] sml:leading-[21.98px] sml:text-center sml:w-[116px] sml:m-auto sml:pt-[17px]">Между- <br>
+          народная</h3>
+          <div class="mt-[25px] stickers-line flex justify-center sml:mt-[20px]">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/sailboat.svg" alt="парусник">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/airplane.svg" alt="самолёт">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/bullet-train.svg" alt="поезд">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/locomotive.svg" alt="локомотив">
+          </div>
+          <p class="mt-[25px] text-center text-base leading-[36.78px] text-white lgl:px-[24px] sml:text-sm sml:px-[26px] sml:leading-[32.19px] sml:tracking-[0.03em] sml:mt-[20px]">Отправка в другую страну либо <br> из другой страны. Например, <br> отправить документы в <br> выбранную вами страну.</p>
+        </section>
+      </div>
+      <div data-section="courier" id="courier" class="flex w-[1299.44px] h-[878.02px] m-auto mt-[150px] section lgl:h-auto lgl:w-auto lgl:flex-col lgl:mt-[70px]">
+        <img class="w-[414.44] h-[878.02px] lmd:w-[280px] lmd:h-auto lmd:m-auto sml:w-[183px]" src="images/iphone-mission-screen.svg" alt="айфон">
+        <div class="flex flex-col mt-[241.38px] ml-[85px] lgl:w-auto lgl:ml-0 lgl:justify-center lgl:mt-[34px]">
+          <h2 class="lgl:max-w-[1000px] lgl:text-center lgl:m-auto lmd:text-[28px] lmd:max-w-[460px] sml:text-[24px] sml:leading-[24.7px] sml:w-[300px]">Для <br> <span class="uppercase text-[96px] leading-[65.86px] lmd:text-[48px] sml:text-[32px] sml:leading-[32.93px]">перевозчика</span></h2>
+          <p class="min-w-[717px] mt-[40px] text-[#1F1F1F] tracking-[0.18em] lgl:max-w-[1000px] lgl:m-auto lgl:text-center lmd:px-[40px] lmd:mt-[35.3px] lmd:min-w-0"> <span class="text-[26px] font-[700] text-[#166A40] tracking-[0.09em] ldd:text-[28px] sml:text-[20px] sml:leading-[25px] sml:max-w-[248px]">Сделай свою поездку выгодной</span> <br class="br-main">
+            Для того чтобы взять заказ на перевозку грузов с помощью <br> нашего приложения необходимо всего лишь нажать на кнопку <br> «готов перевезти» и выбрать подходящие для вас фильтры. Это <br> очень просто и удобно, благодаря интуитивно понятному <br>
+              интерфейсу приложения. Вы так же можете поменять роль на <br> заказчика.</p>
+        </div>
+      </div>
+      <div class="flex justify-between m-auto mt-[150px] max-w-[1216px] h-[724px] ldd:h-auto ldd:flex-col ldd:items-center ldd:mt-[50px]">
+        <section class="shadow-main w-[369px] h-[680px] bg-white  rounded-[60px] sml:w-[250px] sml:rounded-[30px] sml:h-auto">
+          <h3 class="flex flex-col text-center pt-[29px] font-[900] text-[32px] leading-[35.17px] text-[#166A40] sml:text-[20px] sml:leading-[27.68px] sml:max-w-[220px] sml:m-auto sml:pt-[33px]">Курьерская <br> доставка <span class="text-[26px] leading-[28.57px] sml:text-[20px]">(крупная доставка <br> внутри города)</span></h3>
+          <div class="mt-[20px] stickers-line flex justify-center">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/man-running.svg" alt="человек">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/bicycle.svg" alt="велосипед">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/automobile.svg" alt="машина">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/delivery-truck.svg" alt="грузовик">
+          </div>
+          <p class="mt-[42px] text-center text-base leading-[36.78px] text-[#1F1F1F] ldd:px-[23px] sml:pb-[32px] sml:mt-[20px] sml:text-sm sml:leading-[32.19px] sml:tracking-[0.04em]">Чтобы взять заказ на курьерскую <br>
+            доставку или крупную доставку <br>
+            внутри города, нажмите на <br> кнопку "Готов перевезти" и <br>
+            выберите подходящие для вас <br>
+            фильтры. Как только вы <br> выберете подходящий для вас <br> заказ, вам останется лишь <br> откликнуться на него, чтобы <br> заказчик увидел вас.</p>
+        </section>
+        <section class="w-[368px] h-[724px] bg-[#166A40] rounded-[60px] ldd:mt-[40px] sml:w-[250px] sml:rounded-[30px] sml:h-auto">
+          <h3 class="flex flex-col justify-center text-center pt-[29px] font-[900] text-[32px] leading-[35.17px] text-white sml:text-[20px] sml:leading-[27.68px]">Междугородняя <br>
+            <span class="text-[26px] sml:text-[20px]">(попутный груз)</span></h3>
+          <div class="mt-[21px] stickers-line flex justify-center sml:mt-[20px]">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/automobile.svg" alt="машина">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/delivery-truck.svg" alt="грузовик">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/locomotive.svg" alt="локомотив">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/airplane.svg" alt="самолёт">
+          </div>
+          <p class="mt-[25px] text-center text-base leading-[36.78px] text-white ldd:px-[30px] sml:pb-[30px] sml:mt-[20px] sml:text-sm sml:leading-[32.19px] sml:tracking-[0.04em]">Подходит для тех, кто часто <br>
+            ездит или планирует поехать из <br>
+            одного города в другой. <br>
+            - необходимо выбрать город <br> отправления и город прибытия, <br>
+            а также размер посылки <br>
+            которую вы можете взять с <br>
+            собой по пути. При выборе в кг, <br>
+            это подходит для тех, кто едет <br>
+            на мотоцикле, машине, поезде и <br>
+            самолете. При выборе в тоннах <br>
+            подходит для тех, кто едет на <br>
+            газели или фуре.</p>
+        </section>
+        <section class="shadow-main w-[369px] h-[680px] bg-white  rounded-[60px] ldd:mt-[40px] sml:w-[250px] sml:rounded-[30px] sml:h-auto">
+          <h3 class="flex flex-col text-center pt-[29px] font-[900] text-[32px] leading-[35.17px] text-[#166A40] sml:text-[20px] sml:leading-[21.98px] sml:w-[106px] sml:m-auto">Между- <br>народная</span></h3>
+          <div class="mt-[25px] stickers-line flex justify-center sml:mt-[20px]">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/sailboat.svg" alt="парусник">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/airplane.svg" alt="самолёт">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/bullet-train.svg" alt="поезд">
+            <img class="w-[44px] h-[44px] sml:w-[36px] sml:h-[36px]" src="images/locomotive.svg" alt="локомотив">
+          </div>
+          <p class="mt-[25px] text-center text-base leading-[36.78px] text-[#1F1F1F] ldd:px-[30px] sml:pb-[21px] sml:mt-[20px] sml:text-sm sml:leading-[32.19px] sml:tracking-[0.04em]">Чаще всего используется для <br>
+            передачи документов в другую <br>
+            страну и из другой страны. А так <br>
+            же для поиска перевозчиков <br>
+            движущихся из другой страны <br> или в другую страну. Подходит: <br>
+            машина, самолет, газель, фура. <br>
+            - необходимо выбрать страну и <br>
+            город отправления, затем страну <br>
+            и город прибытия. После чего <br>
+            задать параметры, допустимые <br>
+            для вашей перевозки в КГ/ <br>
+            тонны.</p>
+        </section>
+      </div>
+      <section data-section="download" id="download" class="flex items-end mt-[250px] w-[1216px] h-[525.33px] m-auto ldd:min-w-0 ldd:justify-center ldd:w-auto ldd:h-auto ldd:mt-[75px] section">
+        <div class="absolute flex justify-center w-[403px] h-[525px] ml-[64px] ldd:hidden">
+          <img class="w-[403px]" src="images/iphone-download.svg" alt="айфон">
+          <img class="absolute mt-[221px] w-[150.46px]" src="images/logo.svg" alt="логотип">
+        </div>
+        <div class="flex justify-end min-w-[1216px] shadow-main rounded-[60px] h-[392px] ldd:justify-center ldd:shadow-none ldd:min-w-0 ldd:h-auto">
+          <div class="max-w-[610px] h-[255.5px] mt-[68px] mr-[69px] ldd:mr-0 ldd:h-auto ldd:mt-0">
+            <h2 class="leading-[55px] h-[125px] tracking-[0.027em] text-[55px] lmd:leading-[32.93px] lmd:w-[300px] ldd:text-center ldd:h-auto ldd:m-auto lmd:text-[28px] sml:text-[24px] sml:leading-[32.93px] sml:w-[220px]">Скачайте <span class="uppercase lmd:text-[48px] sml:text-[32px]">прибыл</span> <br>
+              прямо сейчас!</h2>
+            <div class="flex w-full mt-[50px] ssd:flex-col ssd:items-center ssd:mt-[40px]">
+              <a class="w-[254.65px] h-[80.5px] mr-[40px] ssd:mr-0" href="#"><img class="w-[254.65px] h-[80.5px]" src="images/app-store.svg" alt="App Store"></a>
+              <a class="w-[254.65px] h-[80.5px] ssd:mt-[40px]" href="#"><img class="w-[254.65px] h-[80.5px]" src="images/play-market.svg" alt="Google Play"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="mt-[99.67px] h-[1804.37px] flex items-center lgl:m-auto mr-[60px] lgl:h-auto lgl:mt-[80px] ldd:px-[35px]">
+        <img class="absolute float-left lgl:hidden" src="images/iphone-comments.svg" alt="айфон">
+        <div data-section="subscribe" id="subscribe" class="float-right flex flex-col items-end w-full lgl:items-center lgl:m-auto section">
+          <div class="pt-[22px] pr-[34px] w-[1124px] h-[408px] mb-[30px] shadow-main rounded-[30px] lgl:w-[1206px] lgl:px-[25px] lgl:pt-[23px] lgl:h-auto lgl:min-h-[300px] lgl:mb-[40px] ldd:w-full ldd:p-[25px]">
+            <div class="text-ladder-comments w-[575px] h-[350px] lgl:hidden"></div>
+            <p class="text-[20px] leading-[32.98px] tracking-[0.07em] text-black ssd:text-center sml:text-sm sml:leading-[23.09px]">Наша Подписка в приложении - это идеальное решение для тех. <br>
+              кто хочет зарабатывать на курьерских и крупных доставках. <br>
+                        С помощью подписки вы автоматически будете получать <br>
+                              новые заказы под выбранные вами фильтры. Вы <br>
+                                можете менять фильтры под ваши параметры. <br>
+                                Например, если вы часто передвигаетесь между <br>
+                              Москвой и Санкт-Петербургом на легковом&nbspавтомобиле, <br>
+                            вы можете выбрать город отправления Москва, а город <br>
+                          прибытия Санкт-Петербург, а также вес посылки, которую <br>
+                      можете взять с собой (кг/тонны). При выборе данного <br>
+                    фильтра новые заказы будут поступать вам.</p>
+          </div>
+          <div class="pt-[38px] w-[1124px] h-[408px] mb-[30px] bg-[#166A40] rounded-[30px] lgl:w-[1206px] lgl:px-[25px] lgl:pt-[23px] lgl:h-auto lgl:min-h-[300px] lgl:mb-[40px] ldd:w-full ldd:p-[25px]">
+            <div class="text-ladder-comments-two w-[575px] h-[350px] lgl:hidden"></div>
+            <p class="text-[20px] leading-[32.98px] text-white tracking-[0.075em] ssd:text-center sml:text-sm sml:leading-[23.09px]">Обратите внимание, что подписка работает только при выборе <br>
+              критерия готов перевезти. Вся коммуникация между пользователями <br>
+                      осуществляется через сообщения внутри приложения, что <br>
+                    обеспечивает безопасность и удобство. Кроме того, прибыл обладает <br>
+                функцией оценки и отзывов, которая позволяет пользователям делиться <br>
+              своим опытом о выполненных заданиях, что помогает поддерживать <br>
+              качество услуг и улучшать репутацию пользователей. Приложение <br>
+              "Прибыл" предоставляет возможность скачать договор на перевозку грузов <br>
+              в целях дополнительной защиты и четкого определения прав и обязанностей <br>
+              между заказчиками и перевозчиками.</p>
+          </div>
+          <div class="pt-[26px] pr-[56px] w-[1206px] h-[350px] shadow-main rounded-[30px] lgl:px-[25px] lgl:pt-[23px] lgl:h-auto lgl:min-h-[300px] ldd:w-full ldd:p-[25px]">
+            <div class="text-ladder-comments-three w-[575px] h-[350px] lgl:hidden"></div>
+            <p class="text-[20px] leading-[32.98px] tracking-[0.06em] text-black ssd:text-center sml:text-sm sml:leading-[23.09px]">Пользователи могут выбрать, хотят ли они использовать этот документ на свое <br>
+              усмотрении и согласие. Верифицированные пользователи: Для обеспечения <br>
+                      безопасности и надежности, "Прибыл" предлагает верификацию пользователей. <br>
+                    Это означает, что информация о пользователе проверена и подтверждена, что помогает <br>
+                создать доверительные отношения и предотвращает возможные проблемы. Рейтинговая <br>
+              система: Пользователи могут оценивать и оставлять отзывы о перевозчиках, основываясь на <br>
+              их прошлом опыте работы с ними. Рейтинговая система позволяет пользователям принимать <br>
+              более осознанные решения при выборе перевозчика и поддерживает высокое качество <br>
+              предоставляемых услуг.</p>
+          </div>
+        </div>
+      </div>
+      <header class="w-full z-50 flex flex-col mt-[36px] h-auto m-auto lmd:hidden">
+        <div class="flex justify-center">
+          <nav class="navbar flex justify-center items-center w-[739px] h-[55px] bg-[#166A40] rounded-[60px]">
+            <ul class="flex items-center space-x-[22px] text-base text-white">
+              <li data-section="home" class="active-link menu-link"><a class="menu-hover" href="#home">Главная</a></li>
+              <li data-section="customer" class="menu-link"><a class="menu-hover" href="#customer">Для&nbspзаказчика</a></li>
+              <li data-section="courier" class="menu-link"><a class="menu-hover" href="#courier">Для&nbspкурьера</a></li>
+              <li data-section="subscribe" class="menu-link"><a class="menu-hover" href="#subscribe">Про&nbspподписку</a></li>
+              <li class="menu-link"><a class="menu-hover" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="flex flex-col items-center mt-[30px] pb-[63.96px] lmd:mt-[50px] lmd:pb-[37px]">
+        <img class="w-[66.11px] h-[87px] lmd:w-[70px] lmd:h-[92px]" src="images/logo.svg" alt="логотип">
+      </div>
+    </main>
+  </div>
 </body>
 </html>
