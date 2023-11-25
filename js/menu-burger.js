@@ -5,17 +5,20 @@ const bodyBg = document.getElementById('body-bg');
 iconMenu.addEventListener("click", function (e) {
     menuBurger.classList.toggle('_active');
     bodyBg.classList.toggle('opacity-body');
+    document.body.classList.toggle('overflow-y-hidden');
 });
 
 const iconClose = document.getElementById('burger-close');
 iconClose.addEventListener("click", function (e) {
     menuBurger.classList.toggle('_active');
     bodyBg.classList.toggle('opacity-body');
+    document.body.classList.toggle('overflow-y-hidden');
 });
 
 document.addEventListener("mouseup", function(event) {
     if (menuBurger.classList.contains('_active') && !menuBurgerInside.contains(event.target)) {
         menuBurger.classList.toggle('_active');
         bodyBg.classList.toggle('opacity-body');
+        document.body.classList.toggle('overflow-y-hidden');
     }
 });
