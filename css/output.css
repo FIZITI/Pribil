@@ -637,6 +637,12 @@ p {
   }
 }
 
+@media (max-width: 980px) {
+  .opacity-body {
+    background-color: #00000080;
+  }
+}
+
 .static {
   position: static;
 }
