@@ -25,11 +25,11 @@
   }
 
   .menu-link {
-    @apply flex items-center min-w-[99px] h-[40px] rounded-[60px];
+    @apply flex items-center h-[40px] rounded-[60px];
   }
   
   .menu-hover {
-    @apply hover:w-full pr-[24px] pl-[16px] hover:h-full flex items-center rounded-[60px] hover:bg-white hover:text-[#166A40];
+    @apply hover:w-full pr-[16px] pl-[16px] hover:h-full flex items-center rounded-[60px] hover:bg-white hover:text-[#166A40];
   }
 
   .active-link {
