@@ -14,7 +14,7 @@ module.exports = {
         'sml': {'max': '480px'},
         'stt': {'max': '420px'},
         'sn': {'max': '321px'},
-        'snp': {'max': '320px'},
+        'snp': {'max': '319px'},
         'mn': {'max': '310px'},
       },
     },
