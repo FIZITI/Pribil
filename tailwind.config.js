@@ -6,6 +6,8 @@ module.exports = {
       screens: {
         'lgl': {'max': '1599px'},
         'ldd': {'max': '1299px'},
+        'll': {'max': '1200px'},
+        'lld': {'max': '1100px'},
         'lmd': {'max': '980px'},
         'mmd': {'min': '980px'},
         'mmp': {'max': '661px'},
