@@ -921,10 +921,6 @@ p {
   max-height: 173px;
 }
 
-.max-h-\[625px\] {
-  max-height: 625px;
-}
-
 .min-h-\[625px\] {
   min-height: 625px;
 }
@@ -959,10 +955,6 @@ p {
 
 .w-\[150\.46px\] {
   width: 150.46px;
-}
-
-.w-\[208px\] {
-  width: 208px;
 }
 
 .w-\[20px\] {
@@ -1472,21 +1464,17 @@ html {
     width: 330px;
   }
 
-  .ldd\:w-full {
-    width: 100%;
+  .ldd\:w-auto {
+    width: auto;
   }
 
-  .ldd\:w-\[\] {
-    width: ;
+  .ldd\:w-full {
+    width: 100%;
   }
 
   .ldd\:w-min {
     width: -moz-min-content;
     width: min-content;
-  }
-
-  .ldd\:w-auto {
-    width: auto;
   }
 
   .ldd\:min-w-0 {
@@ -1495,10 +1483,6 @@ html {
 
   .ldd\:max-w-none {
     max-width: none;
-  }
-
-  .ldd\:max-w-0 {
-    max-width: 0rem;
   }
 
   .ldd\:justify-between {
@@ -1559,6 +1543,10 @@ html {
 }
 
 @media (max-width: 1100px) {
+  .lld\:w-\[220px\] {
+    width: 220px;
+  }
+
   .lld\:w-\[28\%\] {
     width: 28%;
   }
@@ -1567,24 +1555,16 @@ html {
     width: 290px;
   }
 
-  .lld\:w-\[220px\] {
-    width: 220px;
-  }
-
   .lld\:min-w-0 {
     min-width: 0px;
-  }
-
-  .lld\:text-\[70px\] {
-    font-size: 70px;
   }
 
   .lld\:text-\[44px\] {
     font-size: 44px;
   }
 
-  .lld\:text-\[\] {
-    color: ;
+  .lld\:text-\[70px\] {
+    font-size: 70px;
   }
 }
 
@@ -1799,6 +1779,10 @@ html {
 
   .lmd\:pl-0 {
     padding-left: 0px;
+  }
+
+  .lmd\:pr-0 {
+    padding-right: 0px;
   }
 
   .lmd\:pt-0 {
