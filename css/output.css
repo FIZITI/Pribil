@@ -801,10 +801,6 @@ p {
   display: none;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
-}
-
 .h-\[125px\] {
   height: 125px;
 }
@@ -907,10 +903,6 @@ p {
 
 .h-\[922\.02px\] {
   height: 922.02px;
-}
-
-.h-auto {
-  height: auto;
 }
 
 .h-full {
@@ -1086,6 +1078,10 @@ p {
 
 .overflow-y-hidden {
   overflow-y: hidden;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-\[20px\] {
